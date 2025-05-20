@@ -20,7 +20,7 @@ public class TestResultController {
     @PostMapping
     public ResponseEntity<String> submitResult(@RequestBody TestResultRequest request) {
         testResultService.saveResult(request);
-        return ResponseEntity.ok("Test result saved.");
+        return ResponseEntity.ok("결과가 저장되었습니다.");
     }
 
     @GetMapping("/statistics")

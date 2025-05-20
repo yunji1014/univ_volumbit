@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "user") // 매핑될 테이블명
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,11 +17,13 @@ public class User {
 
     private String name;
 
-    private String part;
+    @Enumerated(EnumType.STRING)
+    private Part part;
 
     private String university;
 
-    public User(String name, String part, String university) {
+    // 생성자
+    public User(String name, Part part, String university) {
         this.name = name;
         this.part = part;
         this.university = university;

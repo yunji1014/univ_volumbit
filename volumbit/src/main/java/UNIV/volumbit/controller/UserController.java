@@ -22,7 +22,7 @@ public class UserController {
         return ResponseEntity.ok("회원가입 성공!");
     }
 
-    //데이터가져오기위해 임시로
+    //데이터가져오기위해
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
