@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/univ_volumbit.iml" filepath="$PROJECT_DIR$/.idea/univ_volumbit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volumbit.main.iml" filepath="$PROJECT_DIR$/.idea/modules/volumbit.main.iml" />
     </modules>
   </component>
 </project>
